@@ -50,6 +50,7 @@ target_link_libraries(gitutil
 
 target_link_libraries(subconvert gitutil)
 target_link_libraries(git-monitor gitutil)
+install(TARGETS subconvert git-monitor)
 
 
 
