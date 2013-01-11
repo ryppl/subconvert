@@ -1,7 +1,7 @@
 Faithfully convert Subversion repositories to Git.
 
 SubConvert.py, version 1.0
-
+ 
 Copyright (c) 2011, BoostPro Computing.  All rights reserved.
 
 This script replays Subversion dump files as Git actions, yielding a Git
