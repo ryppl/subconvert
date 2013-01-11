@@ -15,6 +15,11 @@ include_directories(
   ${Boost_INCLUDE_DIRS}
   )
 
+# Installation paths
+SET(INSTALL_BIN bin CACHE PATH "Where to install binaries to.")
+SET(INSTALL_LIB lib CACHE PATH "Where to install libraries to.")
+SET(INSTALL_INC include CACHE PATH "Where to install headers to.")
+
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang" OR "${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
   list(APPEND CMAKE_CXX_FLAGS "-std=c++11 -Werror")
 
@@ -50,7 +55,13 @@ target_link_libraries(gitutil
 
 target_link_libraries(subconvert gitutil)
 target_link_libraries(git-monitor gitutil)
-install(TARGETS subconvert git-monitor)
+
+install(
+  TARGETS subconvert git-monitor
+  RUNTIME DESTINATION ${INSTALL_BIN}
+  LIBRARY DESTINATION ${INSTALL_LIB}
+  ARCHIVE DESTINATION ${INSTALL_LIB}
+  )
 
 
 
