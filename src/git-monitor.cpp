@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
 
   for (auto refname : refs) {
     git_reference * ref;
-    if (GIT_SUCCESS == git_reference_lookup(&ref, repo, refname.c_str())) {
+    if (0 == git_reference_lookup(&ref, repo, refname.c_str())) {
       git_reference * resolved_ref;
       Git::git_check(git_reference_resolve(&resolved_ref, ref));
 
@@ -196,7 +196,7 @@ int main(int argc, char *argv[])
       int ignored = 0;
       for (const fs::path& subpath : paths) {
         Git::git_check
-          (git_status_should_ignore(repo, subpath.string().c_str(), &ignored));
+          (git_status_should_ignore(&ignored, repo, subpath.string().c_str()));
         if (ignored) {
           last_ignored = subpath.string() + "/";
           break;
