@@ -31,7 +31,6 @@
  */
 
 #include "svndump.h"
-#include "config.h"
 
 #ifndef ASSERTS
 #undef assert

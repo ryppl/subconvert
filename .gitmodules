@@ -1,3 +1,6 @@
 [submodule "libgit2"]
 	path = lib/libgit2
 	url = git://github.com/jwiegley/libgit2.git
+[submodule "lib/cmake-cxx11"]
+	path = lib/cmake-cxx11
+	url = git://anongit.kde.org/scratch/dakon/cmake-cxx11.git

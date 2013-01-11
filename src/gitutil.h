@@ -37,8 +37,6 @@
 
 using namespace boost;
 
-#include "config.h"
-
 namespace Git
 {
   inline void git_check(int result) {
