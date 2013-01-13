@@ -33,7 +33,6 @@ if [[ -d $RAMDISK/cpp ]]; then
 
     git init
     
-    export LD_LIBRARY_PATH="$SUBCONVERT/prefix/lib"
     "$SUBCONVERT/prefix/bin/subconvert" -q               \
            -A "$DOC/authors.txt"                         \
            -B "$DOC/branches.txt"                        \

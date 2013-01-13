@@ -32,7 +32,7 @@ endif()
 
 list(APPEND CMAKE_CXX_FLAGS ${CXX11_FEATURE_LIST})
 
-add_library(gitutil
+add_library(gitutil STATIC
   src/gitutil.cpp)
 
 add_executable(subconvert
@@ -57,7 +57,7 @@ target_link_libraries(subconvert gitutil)
 target_link_libraries(git-monitor gitutil)
 
 install(
-  TARGETS subconvert git-monitor
+  TARGETS subconvert git-monitor gitutil
   RUNTIME DESTINATION ${INSTALL_BIN}
   LIBRARY DESTINATION ${INSTALL_LIB}
   ARCHIVE DESTINATION ${INSTALL_LIB}
