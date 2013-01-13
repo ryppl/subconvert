@@ -1,4 +1,6 @@
-#!/bin/bash -x -e
+#!/bin/bash -x
+
+set -o errexit
 
 WORKSPACE="$(pwd)"
 RAMDISK="$WORKSPACE/ramdisk"  # ideally this really *would* be on a ramdisk
