@@ -69,9 +69,3 @@
 #ifdef HAVE_OPENSSL_SHA_H
 #include <openssl/sha.h>
 #endif
-
-#ifdef USE_THREADS
-#include <boost/thread.hpp>
-#include <boost/thread/condition.hpp>
-#include <boost/thread/xtime.hpp>
-#endif

@@ -52,80 +52,6 @@ namespace {
       return left.second < right.second;
     }
   };
-
-#ifdef USE_THREADS
-
-  template<typename Data>
-  class concurrent_queue
-  {
-  private:
-    std::queue<Data> * the_queue;
-    mutable mutex      the_mutex;
-    condition_variable waiting_on_contents;
-    condition_variable waiting_on_empty;
-
-  public:
-    concurrent_queue() : the_queue(new std::queue<Data>) {}
-    ~concurrent_queue() {
-      if (the_queue)
-        delete the_queue;
-    }
-
-    void push(Data&& data) {
-      { mutex::scoped_lock lock(the_mutex);
-        the_queue->push(move(data));
-      }
-      waiting_on_contents.notify_one();
-    }
-
-    void clear() {
-      mutex::scoped_lock lock(the_mutex);
-
-      while (! the_queue->empty())
-        waiting_on_empty.wait(lock);
-
-      delete the_queue;
-      the_queue = nullptr;
-
-      waiting_on_contents.notify_one();
-    }
-
-    bool pop(Data& popped_value) {
-      mutex::scoped_lock lock(the_mutex);
-
-      while (the_queue && the_queue->empty())
-        waiting_on_contents.wait(lock);
-
-      if (! the_queue) {
-        waiting_on_empty.notify_one();
-        return false;
-      } else {
-        popped_value=move(the_queue->front());
-        the_queue->pop();
-
-        waiting_on_empty.notify_one();
-        return true;
-      }
-    }
-  };
-
-  void read_all_nodes(SvnDump::File * dump,
-                      concurrent_queue<SvnDump::File::Node> * queue,
-                      bool ignore_text, bool verify,
-                      int start, int cutoff)
-  {
-    while (dump->read_next(ignore_text, verify)) {
-      SvnDump::File::Node& node(dump->get_curr_node());
-      int rev = node.get_rev_nr();
-      if (cutoff != -1 && rev >= cutoff)
-        break;
-      if (start == -1 || rev >= start)
-        queue->push(move(node));
-    }
-    queue->clear();
-  }
-
-#endif // USE_THREADS
 }
 
 int main(int argc, char *argv[])
@@ -281,39 +207,22 @@ int main(int argc, char *argv[])
       if (! skip_preflight) {
         status.verb = "Scanning";
 
-#ifdef USE_THREADS
-        concurrent_queue<SvnDump::File::Node> prescan_queue;
-        thread svndump_scanner(read_all_nodes, &dump, &prescan_queue,
-                               /* ignore_text= */ false,
-                               /* verify=      */ true,
-                               start, cutoff);
-
-        SvnDump::File::Node node;
-        while (prescan_queue.pop(node)) {
-#else
         while (dump.read_next(/* ignore_text= */ false,
                               /* verify=      */ true)) {
-#endif
+
           int final_rev = dump.get_last_rev_nr();
           if (cutoff != -1 && cutoff < final_rev)
             final_rev = cutoff;
 
           status.set_final_rev(final_rev);
 
-#ifndef USE_THREADS
           int rev = dump.get_rev_nr();
           if (cutoff != -1 && rev >= cutoff)
             break;
           if (start == -1 || rev >= start)
             errors += converter.prescan(dump.get_curr_node());
-#else
-          errors += converter.prescan(node);
-#endif
         }
         status.newline();
-#ifdef USE_THREADS
-        svndump_scanner.join();
-#endif
 
         converter.copy_from.sort(comparator());
 
@@ -340,25 +249,14 @@ int main(int argc, char *argv[])
       // If everything passed the preflight, perform the conversion.
       status.verb = "Converting";
 
-#ifdef USE_THREADS
-      concurrent_queue<SvnDump::File::Node> queue;
-      thread svndump_reader(read_all_nodes, &dump, &queue,
-                            /* ignore_text= */ false,
-                            /* verify=      */ false,
-                            start, cutoff);
-
-      SvnDump::File::Node node;
-      while (queue.pop(node)) {
-#else
       while (dump.read_next(/* ignore_text= */ false)) {
-#endif
+
         int final_rev = dump.get_last_rev_nr();
         if (cutoff != -1 && cutoff < final_rev)
           final_rev = cutoff;
 
         status.set_final_rev(final_rev);
 
-#ifndef USE_THREADS
         int rev = dump.get_rev_nr();
         if (cutoff != -1 && rev >= cutoff)
           break;
@@ -366,14 +264,8 @@ int main(int argc, char *argv[])
           converter(dump.get_curr_node());
         else
           status.update(rev);
-#else
-        converter(node);
-#endif
       }
       converter.finish();
-#ifdef USE_THREADS
-      svndump_reader.join();
-#endif
     }
     else if (cmd == "scan") {
       StatusDisplay status(std::cerr, opts);
