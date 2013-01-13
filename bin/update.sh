@@ -1,20 +1,11 @@
 #!/bin/bash -x
 
-error() {
-    cat <<EOF | mutt -s '[boost] Migration update FAILED' johnw@boostpro.com
-Boost migration update build FAILED.
-EOF
-}
-
-trap 'error ${LINENO}' ERR
-
-RAMDISK=/tmp/ramdisk
-BOOST=$HOME/Mirrors/Boost
-MIGRATE="$HOME/Contracts/BoostPro/Projects/boost-migrate"
-
-"$MIGRATE/bin/modules.sh" reset
-
-cd $BOOST
+WORKSPACE="$(pwd)"
+RAMDISK="$WORKSPACE/ramdisk"  # ideally this really *would* be on a ramdisk
+SUBCONVERT="$WORKSPACE/../subconvert"
+SCRIPTS="$SUBCONVERT/subconvert/bin"
+DOC="$SUBCONVERT/subconvert/doc"
+"$SCRIPTS/modules.sh" reset
 
 (cd boost-git; git reset --hard HEAD; git pull; \
  git submodule foreach "git reset --hard HEAD"; \
@@ -33,12 +24,7 @@ svnadmin dump -q boost.svnrepo > boost.svnrepo.dump
 perl -i -pe "s%url =.*%url = file://$PWD/boost.svnrepo%;" boost-clone/.git/config
 (cd boost-clone; git svn fetch; git reset --hard trunk)
 
-if [[ ! -d $RAMDISK ]]; then
-    mkramdisk
-    if [[ -d $RAMDISK ]]; then
-        mkdir $RAMDISK/cpp
-    fi
-fi
+mkdir -p $RAMDISK/cpp
 
 if [[ -d $RAMDISK/cpp ]]; then
     /bin/rm -fr $RAMDISK/cpp
@@ -46,10 +32,10 @@ if [[ -d $RAMDISK/cpp ]]; then
     cd $RAMDISK/cpp
 
     git init
-    if "$MIGRATE/subconvert" -q                                           \
-           -A "$MIGRATE/doc/authors.txt"                                  \
-           -B "$MIGRATE/doc/branches.txt"                                 \
-           convert $BOOST/boost.svnrepo.dump; then
+    if "$SUBCONVERT/prefix/bin/subconvert" -q            \
+           -A "$DOC/authors.txt"                         \
+           -B "$DOC/branches.txt"                        \
+           convert $WORKSPACE/boost.svnrepo.dump; then
         git symbolic-ref HEAD refs/heads/trunk
         git prune
         sleep 5
@@ -60,19 +46,12 @@ if [[ -d $RAMDISK/cpp ]]; then
         git push -f --tags origin
 
         sleep 5
-        rsync -av --delete .git/ $BOOST/boost-history.git/
+        rsync -av --delete .git/ $WORKSPACE/boost-history.git/
 
-        cd $BOOST
+        cd $WORKSPACE
         sudo umount $RAMDISK
         rm -fr $RAMDISK
     fi
 fi
 
-#"$MIGRATE/bin/modules.sh" update
-#"$MIGRATE/bin/modules.sh" push
-
-cat <<EOF | mutt -s '[boost] Migration update succeeded' johnw@boostpro.com
-Boost migration update succeeded.
-EOF
-
-exit 0
+echo "Done!"
