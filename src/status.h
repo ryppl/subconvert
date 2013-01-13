@@ -47,6 +47,7 @@ class StatusDisplay : public Git::Logger, public noncopyable
 {
   mutable int  rev;
   int          final_rev;
+  mutable int  percentage;
   mutable bool need_newline;
   Options      opts;
 
@@ -57,7 +58,7 @@ public:
   StatusDisplay(std::ostream&      _out,
                 const Options&     _opts = Options(),
                 const std::string& _verb = "Scanning")
-    : rev(-1), need_newline(false), opts(_opts), out(_out),
+    : rev(-1), percentage(-1), need_newline(false), opts(_opts), out(_out),
       verb(_verb) {}
 
   virtual ~StatusDisplay() throw() {}
@@ -96,6 +97,7 @@ public:
     out << "r" << rev << ": " << message << std::endl;
     need_newline = false;
   }
+
   void error(const std::string& message) const {
 #if 0
     newline();
@@ -109,10 +111,14 @@ public:
   void update(const int next_rev = -1) const {
     if (opts.quiet) return;
 
+    int const next_percentage = int((next_rev * 100) / final_rev);
+    if (percentage == next_percentage)
+        return;
+    
     out << verb << ": ";
     if (next_rev != -1) {
       if (final_rev) {
-        out << int((next_rev * 100) / final_rev) << '%'
+        out << next_percentage << '%'
             << " (" << next_rev << '/' << final_rev << ')';
       } else {
         out << next_rev;
@@ -124,6 +130,7 @@ public:
     out << '\r';
     need_newline = true;
     rev = next_rev;
+    percentage = next_percentage;
   }
 
   void finish() const {
