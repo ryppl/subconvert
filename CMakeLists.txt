@@ -57,7 +57,7 @@ target_link_libraries(subconvert gitutil)
 target_link_libraries(git-monitor gitutil)
 
 install(
-  TARGETS subconvert git-monitor gitutil git2
+  TARGETS subconvert git-monitor gitutil
   RUNTIME DESTINATION ${INSTALL_BIN}
   LIBRARY DESTINATION ${INSTALL_LIB}
   ARCHIVE DESTINATION ${INSTALL_LIB}
