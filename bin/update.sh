@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash -x -e
 
 WORKSPACE="$(pwd)"
 RAMDISK="$WORKSPACE/ramdisk"  # ideally this really *would* be on a ramdisk
