@@ -32,25 +32,28 @@ if [[ -d $RAMDISK/cpp ]]; then
     cd $RAMDISK/cpp
 
     git init
-    if "$SUBCONVERT/prefix/bin/subconvert" -q            \
+    
+    export LD_LIBRARY_PATH="$SUBCONVERT/prefix/lib"
+    "$SUBCONVERT/prefix/bin/subconvert" -q               \
            -A "$DOC/authors.txt"                         \
            -B "$DOC/branches.txt"                        \
-           convert /home/svnsync/dump/boost.svndump; then
-        git symbolic-ref HEAD refs/heads/trunk
-        git prune
-        sleep 5
+           convert /home/svnsync/dump/boost.svndump
 
-        git remote add origin git@github.com:ryppl/boost-history.git
-        git push -f --all origin
-        git push -f --mirror origin
-        git push -f --tags origin
+    git symbolic-ref HEAD refs/heads/trunk
+    git prune
+    sleep 5
 
-        sleep 5
-        rsync -av --delete .git/ $WORKSPACE/boost-history.git/
+    git remote add origin git@github.com:ryppl/boost-history.git
+    git push -f --all origin
+    git push -f --mirror origin
+    git push -f --tags origin
 
-        cd $WORKSPACE
-        # sudo umount $RAMDISK
-        rm -fr $RAMDISK
+    sleep 5
+    rsync -av --delete .git/ $WORKSPACE/boost-history.git/
+
+    cd $WORKSPACE
+    # sudo umount $RAMDISK
+    rm -fr $RAMDISK
     fi
 fi
 
