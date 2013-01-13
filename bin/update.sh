@@ -35,7 +35,7 @@ if [[ -d $RAMDISK/cpp ]]; then
     
     export LD_LIBRARY_PATH="$SUBCONVERT/prefix/lib"
 
-    "$SUBCONVERT/prefix/bin/subconvert"                  \
+    "$SUBCONVERT/prefix/bin/subconvert" --verbose        \
            -A "$DOC/authors.txt"                         \
            -B "$DOC/branches.txt"                        \
            convert /home/svnsync/dump/boost.svndump
