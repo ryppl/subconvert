@@ -201,7 +201,7 @@ joernu76	Joern Ungermann	j~ungermann<>fz-juelich~de
 jofaber	Joachim Faulhaber	afojgo<>gmail~com
 johan_torp	Johan Torp	johan~torp<>gmail~com
 john.maddock	John Maddock	john<>johnmaddock~co~uk
-john_phillips	John Phillips	phillips<>mps~ohio-state~edu
+john_phillips	John Phillips (bounce)	phillips<>mps~ohio-state~edu
 johnmaddock	John Maddock	john<>johnmaddock~co~uk
 jonkalb	Jon Kalb	jon<>kalbweb~com
 joseph.gauterin	Joseph Gauterin	joseph~gauterin<>googlemail~com
@@ -273,7 +273,7 @@ neilgroves	Neil Groves	neil<>grovescomputing~com
 nesotto	Thorsten Jørgen Ottosen	thorsten~ottosen<>gmail~com
 ngedmond	Nicholas Edmonds	ngedmond<>cs~indiana~edu
 nickstoughton	Nick Stoughton	nick<>usenix~org
-nicoddemus	Bruno da Silva de Oliveira	nicodemus<>esss~com~br
+nicoddemus	Bruno da Silva de Oliveira (bounce)	nicodemus<>esss~com~br
 niels_dekker	Niels Dekker	nielsdekker<>xs4all~nl
 nielsdekker	Niels Dekker	nielsdekker<>xs4all~nl
 nikiml	Nikolay Mladenov	nikolay~mladenov<>gmail~com
