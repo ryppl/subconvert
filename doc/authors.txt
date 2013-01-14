@@ -5,11 +5,11 @@ aconstantine	Al Constantine Ashford	constantine<>aconstantine~net
 adams	Adam Smith	unfactorable~polynomial<>gmail~com
 agarrett	Aaron Garrett	aaron~lee~garrett<>gmail~com
 agurtovoy	Aleksey Gurtovoy	agurtovoy<>meta-comm~com
-ahundt	Andrew Hundt	athundt@gmail.com
+ahundt	Andrew Hundt	athundt<>gmail.com
 akalin	Frederick Akalin	akalin<>akalin~cx
 alejandro	Alejandro Cabrera	cpp~cabrera<>gmail~com
 aliazarbayejani	Ali J~ Azarbayejani (bounce)	ali<>merl~com
-alisdairm27386	Alisdair Meredith (bounce)	alisdair~meredith<>uk~renaultf1~com
+alisdairm27386	Alisdair Meredith	alisdairm<>me~com
 alkise	Alkis Evlogimenos (bounce)	alkis<>routescience~com
 alnsn	Alexander Nasonov	alnsn<>yandex~ru
 alpmestan	Alp Mestanogullari (bounce)	alp<>mestan~fr
@@ -88,7 +88,7 @@ cslittle	Chris Little	cslittle<>mac~com
 cwagner	Christopher Wagner	c~alexander~wagner<>gmail~com
 dan_marsden	Dan Marsden	danmarsden<>yahoo~co~uk
 daniel	Daniel James	daniel<>calamity~org~uk
-daniel_egloff	Daniel Egloff (bounce)	daniel~egloff<>zkb~ch
+daniel_egloff	Daniel Egloff	daniel~egloff<>hispeed~ch
 daniel_frey	Daniel Frey	d~frey<>gmx~de
 daniel_wallin	Daniel Wallin	daniel<>boostpro~com
 danieljames	Daniel James	daniel<>calamity~org~uk
@@ -201,7 +201,7 @@ joernu76	Joern Ungermann	j~ungermann<>fz-juelich~de
 jofaber	Joachim Faulhaber	afojgo<>gmail~com
 johan_torp	Johan Torp	johan~torp<>gmail~com
 john.maddock	John Maddock	john<>johnmaddock~co~uk
-john_phillips	John Phillips (bounce)	jphillip<>capital~edu
+john_phillips	John Phillips	phillips<>mps~ohio-state~edu
 johnmaddock	John Maddock	john<>johnmaddock~co~uk
 jonkalb	Jon Kalb	jon<>kalbweb~com
 joseph.gauterin	Joseph Gauterin	joseph~gauterin<>googlemail~com
@@ -225,7 +225,7 @@ lally.singh	Lally Singh	lally~singh<>gmail~com
 latte	Andy Elvey	andy~elvey<>paradise~net~nz
 lbourdev	Lubomir Bourdev (bounce)	lbourdev<>adobe~com
 lcaminiti	Lorenzo Caminiti	lorcaminiti<>gmail~com
-ljsimons	Lucanus J~ Simonson (bounce)	lucanus~j~simonson<>intel~com
+ljsimons	Luke Simonson	simoluk<>gmail~com
 llee1	Lie-Quan Lee	liequan<>slac~stanford~edu
 loonycyborg	Sergey Popov	loonycyborg<>gmail~com
 lopezeant	Michael Lopez	mlopez7<>kent~edu
@@ -266,14 +266,14 @@ msclrhd	Reece H~ Dunn (bounce)	msclrhd<>hotmail~com
 mstefanro	Stefan Mihaila	mstefanro<>gmail~com
 mumiee	Andreas Pokorny	andreas~pokorny<>gmail~com
 murilov	Murilo Adriano Vasconcelos	muriloufg<>gmail~com
-nasonov	Alexander Nasonov (bounce)	Alexander~Nasonov<>gs~com
+nasonov	Alexander Nasonov	alexander~nasonov<>gmail~com
 nathanridge	Nathan Ridge	zeratul976<>hotmail~com
 nbecker	Neal D~ Becker	ndbecker2<>gmail~com
 neilgroves	Neil Groves	neil<>grovescomputing~com
-nesotto	Thorsten Jørgen Ottosen (bounce)	nesotto<>cs~aau~dk
+nesotto	Thorsten Jørgen Ottosen	thorsten~ottosen<>gmail~com
 ngedmond	Nicholas Edmonds	ngedmond<>cs~indiana~edu
 nickstoughton	Nick Stoughton	nick<>usenix~org
-nicoddemus	Bruno da Silva de Oliveira (bounce)	nicodemus<>globalite~com~br
+nicoddemus	Bruno da Silva de Oliveira	nicodemus<>esss~com~br
 niels_dekker	Niels Dekker	nielsdekker<>xs4all~nl
 nielsdekker	Niels Dekker	nielsdekker<>xs4all~nl
 nikiml	Nikolay Mladenov	nikolay~mladenov<>gmail~com
@@ -358,7 +358,7 @@ theller	Thomas Heller	thom~heller<>googlemail~com
 thijs	Thijs van den Berg	thijs<>sitmo~com
 tibuleac.ioana	Unknown (bounce)	tibuleac~ioana<>users~sf~net
 timblechmann	Tim Blechmann	tim<>klingt~org
-tknapen	Toon Knapen (bounce)	toon~knapen<>fft~be
+tknapen	Toon Knapen	toon~knapen<>gmail~com
 tobias.loew	Tobias Loew	tobi<>die-loews~de
 trademark	Talbot Pierre	ptalbot<>mopong~net
 trisk	Albert Lee	trisk<>forkgnu~org
@@ -381,7 +381,7 @@ vladimir_prus	Vladimir Prus	ghost<>cs~msu~su
 wash	Bryce Adelstein-Lelbach	blelbach<>cct~lsu~edu
 witt	Thomas Witt	witt<>acm~org
 wom-work	Ben Hutchings	ben<>decadentplace~org~uk
-xiaogang.zhang	Xiaogang Zhang (bounce)	xiaogang~zhang_unknown<>boost~org
+xiaogang.zhang	Xiaogang Zhang (bounce)	xiaogang~zhang<>users~sf~net
 xushiwei	xushiwei	xushiweizh<>gmail~com
 yigongliu	Yigong Liu	yigongliu<>gmail~com
 youjamaa	Youssef Oujamaa	youssef~oujamaa<>gmail~com
