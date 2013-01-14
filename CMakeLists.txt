@@ -41,6 +41,7 @@ add_executable(subconvert
   src/converter.cpp
   src/main.cpp
   src/svndump.cpp
+  src/submodule.cpp
 )
 
 add_executable(git-monitor
