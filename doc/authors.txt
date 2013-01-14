@@ -8,14 +8,14 @@ agurtovoy	Aleksey Gurtovoy	agurtovoy<>meta-comm~com
 ahundt	Andrew Hundt	athundt@gmail.com
 akalin	Frederick Akalin	akalin<>akalin~cx
 alejandro	Alejandro Cabrera	cpp~cabrera<>gmail~com
-aliazarbayejani	Ali J~ Azarbayejani	ali<>merl~com
-alisdairm27386	Alisdair Meredith	alisdair~meredith<>uk~renaultf1~com
-alkise	Alkis Evlogimenos	alkis<>routescience~com
+aliazarbayejani	Ali J~ Azarbayejani (bounce)	ali<>merl~com
+alisdairm27386	Alisdair Meredith (bounce)	alisdair~meredith<>uk~renaultf1~com
+alkise	Alkis Evlogimenos (bounce)	alkis<>routescience~com
 alnsn	Alexander Nasonov	alnsn<>yandex~ru
-alpmestan	Alp Mestanogullari	alp<>mestan~fr
+alpmestan	Alp Mestanogullari (bounce)	alp<>mestan~fr
 amduser	Alexander Haro	amduser29<>gmail~com
 andre.bergner	André Bergner	andre~bergner~0<>googlemail~com
-andreas.donni	Andreas Donni	andreas~donni<>users~sf~net
+andreas.donni	Andreas Donni (bounce)	andreas~donni<>users~sf~net
 andreas_huber69	Andreas Huber	ahd6974-boostorg<>live~com
 andreo	Andrey Torba	andreytorba<>gmail~com
 andysem	Andrey Semashev	andrey~semashev<>gmail~com
@@ -38,14 +38,14 @@ beman_dawes	Beman Dawes	bdawes<>acm~org
 bemandawes	Beman Dawes	bdawes<>acm~org
 ben_hanson	Ben Hanson	jamin~hanson<>googlemail~com
 bensobotta	Benjamin Sobotta	ben<>zwopi~com
-bernhard.reiter	Bernhard Reiter	ockham<>gmx~net
-bernhard_reiter	Bernhard Reiter	ockham<>gmx~net
+bernhard.reiter	Bernhard Reiter (bounce)	ockham<>gmx~net
+bernhard_reiter	Bernhard Reiter (bounce)	ockham<>gmx~net
 bgreen	Bryan Green	bgreen0<>gmail~com
 bgubenko	Boris Gubenko	boris~gubenko<>hp~com
 bhy	Haoyu Bai	divinekid<>gmail~com
 bigcheese	Michael Spencer	bigcheesegs<>gmail~com
 bill_buklis	Bill Buklis	boostusr<>pbjzone~com
-bill_kempf	William E~ Kempf	wekempf<>cox~net
+bill_kempf	William E~ Kempf (bounce)	wekempf<>cox~net
 biochimia	João Abecasis	joao<>abecasis~name
 birbacher	Frank Birbacher	bloodymir~crap<>gmx~net
 bjorn_karlsson	Björn Karlsson	Bjorn~Karlsson<>readsoft~com
@@ -88,7 +88,7 @@ cslittle	Chris Little	cslittle<>mac~com
 cwagner	Christopher Wagner	c~alexander~wagner<>gmail~com
 dan_marsden	Dan Marsden	danmarsden<>yahoo~co~uk
 daniel	Daniel James	daniel<>calamity~org~uk
-daniel_egloff	Daniel Egloff	daniel~egloff<>zkb~ch
+daniel_egloff	Daniel Egloff (bounce)	daniel~egloff<>zkb~ch
 daniel_frey	Daniel Frey	d~frey<>gmx~de
 daniel_wallin	Daniel Wallin	daniel<>boostpro~com
 danieljames	Daniel James	daniel<>calamity~org~uk
@@ -102,7 +102,7 @@ davedeakins	David Deakins	DavidDeakins<>gmail~com
 daveedvdv	Daveed Vandevoorde	daveed<>vandevoorde~com
 david.bellot	David Bellot	david~bellot<>gmail~com
 david_abrahams	Dave Abrahams	dave<>boostpro~com
-davidheld	David B~ Held	dheld<>codelogicconsulting~com
+davidheld	David B~ Held (bounce)	dheld<>codelogicconsulting~com
 dbarbosa	Davi de Melo Jorge Barbosa	dbarbosa<>gmail~com
 denis.arnaud	Denis Arnaud	denis~arnaud_boost<>m4x~org
 dfrey42	Daniel Frey	d~frey<>gmx~de
@@ -159,13 +159,13 @@ hevad57	David Hawkes	hevad57<>users~sourceforge~net
 hinnant	Howard Hinnant	hinnant<>twcny~rr~com
 hkaiser	Hartmut Kaiser	hartmut~kaiser<>gmail~com
 hljin	Hailin Jin	hljin<>adobe~com
-hnaik	Harish G Naik	hnaik<>riglabs~com
-hubert_holin	Hubert Holin	Hubert~Holin<>lmd~polytechnique~fr
+hnaik	Harish G Naik (bounce)	hnaik<>riglabs~com
+hubert_holin	Hubert Holin (bounce)	Hubert~Holin<>lmd~polytechnique~fr
 hughwimberly	Hugh Wimberly	hugh~wimberly<>gmail~com
 hugoduncan	Hugo Duncan	hugo~duncan<>alcan~com
 huseyinakcan	Huseyin Akcan	huseyinakcan<>gmail~com
 igaztanaga	Ion Gaztañaga	igaztanaga<>gmail~com
-imaman	Itay Maman	itay_maman<>yahoo~com
+imaman	Itay Maman (bounce)	itay_maman<>yahoo~com
 imikejackson	Michael A~ Jackson	mike~jackson<>bluequartz~net
 jakevoytko	Jacob Voytko	JakeVoytko<>gmail~com
 james.widman	James Widman	widman<>gimpel~com
@@ -174,7 +174,7 @@ jano_gaspar	Jan Gaspar	jano_gaspar<>yahoo~com
 jared	Jared McIntyre	jmcintyre<>dfsoftware~com
 jbandela	John R~ Bandela	jbandela<>ufl~edu
 jbosch	Jim Bosch	talljimbo<>gmail~com
-jbrandmeyer	Jonathan Brandmeyer	jbrandmeyer<>earthlink~net
+jbrandmeyer	Jonathan Brandmeyer (bounce)	jbrandmeyer<>earthlink~net
 jczerk	John Czerkowicz	jczerk<>earthlink~net
 jdmoore99	John D~ Moore	jdmoore99<>users~sourceforge~net
 jefffaust	Jeffrey Faust	jeff<>opticalres~com
@@ -201,7 +201,7 @@ joernu76	Joern Ungermann	j~ungermann<>fz-juelich~de
 jofaber	Joachim Faulhaber	afojgo<>gmail~com
 johan_torp	Johan Torp	johan~torp<>gmail~com
 john.maddock	John Maddock	john<>johnmaddock~co~uk
-john_phillips	John Phillips	jphillip<>capital~edu
+john_phillips	John Phillips (bounce)	jphillip<>capital~edu
 johnmaddock	John Maddock	john<>johnmaddock~co~uk
 jonkalb	Jon Kalb	jon<>kalbweb~com
 joseph.gauterin	Joseph Gauterin	joseph~gauterin<>googlemail~com
@@ -223,14 +223,14 @@ kyriales	Kresimir Fresl	fresl<>grad~hr
 lakeeast	Yuanming Chen	yuanming<>gmail~com
 lally.singh	Lally Singh	lally~singh<>gmail~com
 latte	Andy Elvey	andy~elvey<>paradise~net~nz
-lbourdev	Lubomir Bourdev	lbourdev<>adobe~com
+lbourdev	Lubomir Bourdev (bounce)	lbourdev<>adobe~com
 lcaminiti	Lorenzo Caminiti	lorcaminiti<>gmail~com
-ljsimons	Lucanus J~ Simonson	lucanus~j~simonson<>intel~com
+ljsimons	Lucanus J~ Simonson (bounce)	lucanus~j~simonson<>intel~com
 llee1	Lie-Quan Lee	liequan<>slac~stanford~edu
 loonycyborg	Sergey Popov	loonycyborg<>gmail~com
 lopezeant	Michael Lopez	mlopez7<>kent~edu
-loyso	Alexey Baskakov	loyso<>loyso~m6~net
-manitou	Marc Wintermantel	marc~wintermantel<>imes~mavt~ethz~ch
+loyso	Alexey Baskakov (bounce)	loyso<>loyso~m6~net
+manitou	Marc Wintermantel (bounce)	marc~wintermantel<>imes~mavt~ethz~ch
 marccromme	Marc Cromme	marc<>ange~dk
 mariomulansky	Mario Mulansky	mario~mulansky<>gmx~net
 mark_rodgers	Mark Rodgers	mark~rodgers<>cadenza~co~nz
@@ -253,7 +253,7 @@ mconsoni	Mariano Gabriel Consoni	mariano~consoni<>gmail~com
 memring	Pavol Droba	droba<>topmail~sk
 mgaunard	Mathias Gaunard	loufoque<>gmail~com
 michel	Michel Morin	mimomorin<>gmail~com
-michel_andre	Michel André	michel~andre<>swipnet~se
+michel_andre	Michel André (bounce)	michel~andre<>swipnet~se
 mikhailberis	Dean Michael Berris	mikhailberis<>gmail~com
 mistevens	Michael Stevens	mail<>michael-stevens~de
 mjcaisse	Michael Caisse	mcaisse<>ciere~com
@@ -261,19 +261,19 @@ mloskot	Mateusz Loskot	mateusz<>loskot~net
 mmarcus	Mat Marcus	mmarcus<>emarcus~org
 mmurrett	Mac Murrett	mmurrett<>mac~com
 mrdans	Dan Searles	dansearles<>yahoo~com
-mrovner	Mike Rovner	mike<>bindkey~com
-msclrhd	Reece H~ Dunn	msclrhd<>hotmail~com
+mrovner	Mike Rovner (bounce)	mike<>bindkey~com
+msclrhd	Reece H~ Dunn (bounce)	msclrhd<>hotmail~com
 mstefanro	Stefan Mihaila	mstefanro<>gmail~com
 mumiee	Andreas Pokorny	andreas~pokorny<>gmail~com
 murilov	Murilo Adriano Vasconcelos	muriloufg<>gmail~com
-nasonov	Alexander Nasonov	Alexander~Nasonov<>gs~com
+nasonov	Alexander Nasonov (bounce)	Alexander~Nasonov<>gs~com
 nathanridge	Nathan Ridge	zeratul976<>hotmail~com
 nbecker	Neal D~ Becker	ndbecker2<>gmail~com
 neilgroves	Neil Groves	neil<>grovescomputing~com
-nesotto	Thorsten Jørgen Ottosen	nesotto<>cs~aau~dk
+nesotto	Thorsten Jørgen Ottosen (bounce)	nesotto<>cs~aau~dk
 ngedmond	Nicholas Edmonds	ngedmond<>cs~indiana~edu
 nickstoughton	Nick Stoughton	nick<>usenix~org
-nicoddemus	Bruno da Silva de Oliveira	nicodemus<>globalite~com~br
+nicoddemus	Bruno da Silva de Oliveira (bounce)	nicodemus<>globalite~com~br
 niels_dekker	Niels Dekker	nielsdekker<>xs4all~nl
 nielsdekker	Niels Dekker	nielsdekker<>xs4all~nl
 nikiml	Nikolay Mladenov	nikolay~mladenov<>gmail~com
@@ -287,7 +287,7 @@ noel_belcourt	K~ Noel Belcourt	kbelco<>sandia~gov
 nuffer	Daniel Nuffer	dan-boost<>nuffer~name
 olli	Oliver Kowalke	oliver~kowalke<>gmail~com
 pan	Pierre-Andre Noel	noel~pierre~andre<>gmail~com
-paolog	Paul Giaccone	paulg<>cinesite~co~uk
+paolog	Paul Giaccone (bounce)	paulg<>cinesite~co~uk
 pavol_droba	Pavol Droba	droba<>topmail~sk
 pbouchard	Phil Bouchard	phil<>fornux~com
 pbristow	Paul A~ Bristow	pbristow<>hetp~u-net~com
@@ -335,7 +335,7 @@ shammah	Stephen Cleary	scleary<>jerviswebb~com
 siliconman	David Dean	david~dean<>codegear~com
 simons	Peter Simons	simons<>cryp~to
 sixtrillion	Jeremy	sixtrillion<>users~sf~net
-sl_	Slawomir Lisznianski	sl<>paramay~com
+sl_	Slawomir Lisznianski (bounce)	sl<>paramay~com
 slapi	Stefan Slapeta	stefan<>slapeta~com
 smcmurray	Scott McMurray	me22~ca+boost<>gmail~com
 softwareace	Andreas Haberstroh	andreas<>ibusy~com
@@ -349,16 +349,16 @@ stephan.diederich	Stephan Diederich	stephan~diederich<>googlemail~com
 steven_watanabe	Steven Watanabe	steven<>providere-consulting~com
 straszheim	Troy D~ Straszheim	troy<>resophonic~com
 studoot	Stuart Dootson	stuart~dootson<>gmail~com
-surerb	Unknown	surerb<>users~sf~net
+surerb	Unknown (bounce)	surerb<>users~sf~net
 syl	Sylvain Pion	pion~sylvain<>gmail~com
 t_schwinger	Tobias Schwinger	tschwinger<>isonews2~com
 t_stange	Unknown	t_stange<>users~sf~net
 thejcab	Juan Carlos Arevalo-Baeza	jcab<>JCABs-Rumblings~com
 theller	Thomas Heller	thom~heller<>googlemail~com
 thijs	Thijs van den Berg	thijs<>sitmo~com
-tibuleac.ioana	Unknown	tibuleac~ioana<>users~sf~net
+tibuleac.ioana	Unknown (bounce)	tibuleac~ioana<>users~sf~net
 timblechmann	Tim Blechmann	tim<>klingt~org
-tknapen	Toon Knapen	toon~knapen<>fft~be
+tknapen	Toon Knapen (bounce)	toon~knapen<>fft~be
 tobias.loew	Tobias Loew	tobi<>die-loews~de
 trademark	Talbot Pierre	ptalbot<>mopong~net
 trisk	Albert Lee	trisk<>forkgnu~org
@@ -367,8 +367,8 @@ troyer	Matthias Troyer	troyer<>phys~ethz~ch
 tslettebo	Terje Slettebø	tslettebo<>broadpark~no
 turkanis	Jonathan Turkanis	j<>coderage~com
 tzlaine	Timothy Zachary Laine	whatwasthataddress<>gmail~com
-uid30600	uid30600	uid30600<>boost~org
-uid30850	uid30850	uid30850<>boost~org
+uid30600	uid30600 (bounce)	uid30600<>boost~org
+uid30850	uid30850 (bounce)	uid30850<>boost~org
 ullrich_koethe	Ullrich Köthe	ullrich~koethe<>iwr~uni-heidelberg~de
 urzuga	Jaakko Järvi	jarvi<>cs~tamu~edu
 vawjr	Victor A~ Wagner Jr~	vwagner<>tetondata~com
@@ -381,7 +381,7 @@ vladimir_prus	Vladimir Prus	ghost<>cs~msu~su
 wash	Bryce Adelstein-Lelbach	blelbach<>cct~lsu~edu
 witt	Thomas Witt	witt<>acm~org
 wom-work	Ben Hutchings	ben<>decadentplace~org~uk
-xiaogang.zhang	Unknown	xiaogang~zhang_unknown<>boost~org
+xiaogang.zhang	Xiaogang Zhang (bounce)	xiaogang~zhang_unknown<>boost~org
 xushiwei	xushiwei	xushiweizh<>gmail~com
 yigongliu	Yigong Liu	yigongliu<>gmail~com
 youjamaa	Youssef Oujamaa	youssef~oujamaa<>gmail~com
