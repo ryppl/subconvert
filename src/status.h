@@ -74,7 +74,7 @@ public:
   void debug(const std::string& message) const {
     if (debug_mode()) {
       newline();
-      out << "r" << rev << ": " << message << std::endl;
+      out << "r" << rev << ": " << message << std::endl << std::flush;
       need_newline = false;
     }
   }
@@ -102,7 +102,7 @@ public:
   void error(const std::string& message) const {
     ++errors;
     newline();
-    out << "r" << rev << ": Error: " << message << std::endl;
+    out << "r" << rev << ": Error: " << message << std::endl << std::flush;
     need_newline = false;
   }
 
