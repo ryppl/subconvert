@@ -62,7 +62,7 @@ struct ConvertRepository
   ConvertRepository(const filesystem::path& pathname,
                     StatusDisplay&          _status,
                     const Options&          _opts = Options())
-    : status(_status), opts(_opts), last_rev(-1),
+    : status(_status), opts(_opts), authors(_status), last_rev(-1),
       repository(new Git::Repository
                  (pathname, status,
                   bind(&ConvertRepository::set_commit_info, this, _1))),
