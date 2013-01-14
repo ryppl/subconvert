@@ -237,6 +237,8 @@ int main(int argc, char *argv[])
           }
         }
 
+        errors += status.count_errors();
+        
         if (errors > 0) {
           status.warn("Please correct the errors listed above and run again.");
           return 1;

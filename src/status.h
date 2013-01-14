@@ -49,6 +49,7 @@ class StatusDisplay : public Git::Logger, public noncopyable
   int          final_rev;
   mutable int  percentage;
   mutable bool need_newline;
+  mutable unsigned errors;
   Options      opts;
 
 public:
@@ -58,7 +59,7 @@ public:
   StatusDisplay(std::ostream&      _out,
                 const Options&     _opts = Options(),
                 const std::string& _verb = "Scanning")
-    : rev(-1), percentage(-1), need_newline(false), opts(_opts), out(_out),
+    : rev(-1), percentage(-1), need_newline(false), errors(0), opts(_opts), out(_out),
       verb(_verb) {}
 
   virtual ~StatusDisplay() throw() {}
@@ -94,19 +95,21 @@ public:
 
   void warn(const std::string& message) const {
     newline();
-    out << "r" << rev << ": " << message << std::endl;
+    out << "r" << rev << ": Warning: " << message << std::endl;
     need_newline = false;
   }
 
   void error(const std::string& message) const {
-#if 0
+    ++errors;
     newline();
-    out << "r" << rev << ": " << message << std::endl;
+    out << "r" << rev << ": Error: " << message << std::endl;
     need_newline = false;
-#else
-    throw std::runtime_error(message);
-#endif
   }
+
+    unsigned count_errors() const
+    {
+        return errors;
+    }
 
   void update(const int next_rev = -1) const {
     if (opts.quiet) return;
