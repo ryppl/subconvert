@@ -38,6 +38,7 @@ if [[ -d $RAMDISK/cpp ]]; then
     "$SUBCONVERT/prefix/bin/subconvert"                  \
            -A "$DOC/authors.txt"                         \
            -B "$DOC/branches.txt"                        \
+           -M "$DOC/modules.txt"                         \
            convert /home/svnsync/dump/boost.svndump
 
     git symbolic-ref HEAD refs/heads/trunk
