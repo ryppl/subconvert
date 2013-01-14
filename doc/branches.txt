@@ -96,6 +96,9 @@ tag	39133	2007-09-06	4	branches/libs/filesystem	old-branches/libs/filesystem
 tag	39167	2007-09-08	5	branches/libs/system	old-branches/libs/system
 tag	28262	2005-04-15	1	branches/logo_contest_images	old-branches/logo_contest_images
 branch	59531	2010-02-06	5	branches/maintenance/1_41	maintenance/1_41
+branch	-1	2010-02-06	-1	branches/maintenance/1_50_0	maintenance/1_50_0
+branch	-1	2010-02-06	-1	branches/maintenance/1_51_0	maintenance/1_51_0
+branch	-1	2010-02-06	-1	branches/maintenance/1_52_0	maintenance/1_52_0
 tag	15294	2002-09-13	8	branches/matrix_development	old-branches/matrix_development
 tag	9569	2001-03-17	2	branches/more1	old-branches/more1
 tag	9348	2001-02-27	2	branches/moved_pointer	old-branches/moved_pointer
@@ -247,6 +250,7 @@ branch	7556	2007-07-26	6	sandbox-branches/expaler	sandbox/expaler
 branch	-1	2012-02-21	-1	sandbox-branches/geometry/index	sandbox/geometry/index
 branch	-1	2011-02-15	-1	sandbox-branches/geometry/index_080	sandbox/geometry/index_080
 branch	-1	2011-02-15	-1	sandbox-branches/geometry/index_080_nhch	sandbox/geometry/index_080_nhch
+branch	-1	2012-02-21	-1	sandbox-branches/geometry/index_dev	sandbox/geometry/index_dev
 branch	-1	2012-02-21	-1	sandbox-branc/geometry/index_080_new	sandbox/geometry/index_080_new_mistyped
 branch	-1	2012-02-21	-1	sandbox-branches/geometry/index_080_new	sandbox/geometry/index_080_new
 branch	-1	2012-02-21	-1	sandbox-branches/geometry/index_080_vis	sandbox/geometry/index_080_vis
@@ -524,8 +528,11 @@ tag	-1	2012-02-21	-1	tags/release/Boost_1_47_0_beta1	release/Boost_1_47_0_beta1
 tag	-1	2012-02-21	-1	tags/release/Boost_1_48_0	release/Boost_1_48_0
 tag	-1	2012-02-21	-1	tags/release/Boost_1_48_0_beta1	release/Boost_1_48_0_beta1
 tag	-1	2012-02-21	-1	tags/release/Boost_1_49_0_beta1	release/Boost_1_49_0_beta1
-tag	-1	2012-02-21	-1	tags/release/Boost_1_50_0_beta1	release/Boost_1_50_0_beta1
 tag	-1	2012-02-23	-1	tags/release/Boost_1_49_0	release/Boost_1_49_0
+tag	-1	2012-02-21	-1	tags/release/Boost_1_50_0_beta1	release/Boost_1_50_0_beta1
+tag	-1	2012-02-21	-1	tags/release/Boost_1_50_0	release/Boost_1_50_0
+tag	-1	2012-02-21	-1	tags/release/Boost_1_51_0	release/Boost_1_51_0
+tag	-1	2012-02-21	-1	tags/release/Boost_1_52_0	release/Boost_1_52_0
 tag	44271	2008-04-12	1	tags/release/RC_1_30_2	release/RC_1_30_2
 tag	44269	2008-04-12	1	tags/release/VERSION_1_35_0_RC1	release/VERSION_1_35_0_RC1
 tag	44228	2008-04-12	1	tags/release/Version_1_17_0	release/Version_1_17_0
