@@ -570,6 +570,11 @@ namespace Git
     void      create_file(const filesystem::path& pathname,
                           const std::string& content = "");
 
+    const filesystem::path dotgit_directory() const
+    {
+        return filesystem::path(::git_repository_path(repo));
+    }
+
 #if defined(HAVE_BOOST_SERIALIZATION)
   private:
     /** Serialization. */
