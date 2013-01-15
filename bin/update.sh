@@ -26,12 +26,10 @@ DOC="$SUBCONVERT/subconvert/doc"
 
 mkdir -p "$RAMDISK"
 chmod 700 "$RAMDISK"
-if [[ ! -d "$RAMDISK/cpp" ]]; then
-    mkdir "$RAMDISK/cpp"
-    cd "$RAMDISK/cpp"
-    git init
-fi
+rm -rf "$RAMDISK/cpp"
+mkdir "$RAMDISK/cpp"
 cd "$RAMDISK/cpp"
+git init
 
 export LD_LIBRARY_PATH="$SUBCONVERT/prefix/lib"
 
@@ -57,4 +55,4 @@ sleep 5
 rsync -aix --delete .git/ $WORKSPACE/boost-history.git/ | pv -le -s "$(du -d 0 boost-zero/ | cut -f 1)" > /dev/null
 
 cd $WORKSPACE
-fi
+rm -rf "$RAMDISK/cpp"
