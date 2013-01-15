@@ -38,7 +38,8 @@ export LD_LIBRARY_PATH="$SUBCONVERT/prefix/lib"
        -B "$DOC/branches.txt"                        \
        -M "$DOC/modules.txt"                         \
        --gc 1000 --skip                              \
-       convert /home/svnsync/dump/boost.svndump
+       convert /home/svnsync/dump/boost.svndump      \
+       | grep -Ev '^LRU$'
 
 git symbolic-ref HEAD refs/heads/trunk
 git prune
