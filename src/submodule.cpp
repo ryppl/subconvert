@@ -32,6 +32,7 @@
 
 #include "submodule.h"
 #include "converter.h"
+#include <fstream>
 
 Submodule::Submodule(std::string _pathname, ConvertRepository& _parent)
   : pathname(_pathname), parent(_parent)
@@ -41,6 +42,11 @@ Submodule::Submodule(std::string _pathname, ConvertRepository& _parent)
   // Initialize a Git repository for this submodule in the subdirectory
   std::system((std::string("git --git-dir=\"") +
                pathname + "/.git\" init").c_str());
+
+  // Share as much storage with the parent repository as possible
+  std::ofstream((pathname + "/.git/objects/info/alternates").c_str())
+      << (parent.repository->dotgit_directory() / "objects").c_str()
+      << std::endl;
 
   repository =
     new Git::Repository(filesystem::system_complete(pathname),
