@@ -3,7 +3,7 @@
 set -o errexit
 
 WORKSPACE="$(pwd)"
-RAMDISK="/tmp/jenkins-subconvert"  # /tmp is expected to be a ramdisk
+RAMDISK="/mnt/ramdisk/jenkins-subconvert"
 SUBCONVERT="$WORKSPACE/../subconvert"
 SCRIPTS="$SUBCONVERT/subconvert/bin"
 DOC="$SUBCONVERT/subconvert/doc"
