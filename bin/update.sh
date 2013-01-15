@@ -55,5 +55,16 @@ sleep 5
 # rsync to persistent storage.  Give ETA updates every 2s
 rsync -aix --delete .git/ $WORKSPACE/boost-history.git/ | pv -le -s "$(du -d 0 .git/ | cut -f 1)" > /dev/null
 
+# Push tools and libs up to GitHub
+for dir in libs tools ; do
+    pushd dir
+    for module in * ; do
+        (cd module;
+        git remote add origin 'git@github.com:boostorg/'+module;
+        git push --mirror origin)
+    done
+    popd dir
+done
+
 cd $WORKSPACE
 rm -rf "$RAMDISK/cpp"
