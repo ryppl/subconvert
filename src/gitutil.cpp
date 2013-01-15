@@ -669,12 +669,13 @@ void Repository::write_branches()
 
 void Repository::garbage_collect()
 {
+  log.info("Garbage Collecting");
   if (repo_name.empty()) {
     std::system("git config gc.autopacklimit 0");
     std::system("git config loose.compression 0");
 
     log.newline();
-    std::system("git gc");
+    std::system("git gc --quiet");
   } else {
     std::system((std::string("git --git-dir=\"") + repo_name +
                  "\" config gc.autopacklimit 0").c_str());
@@ -683,7 +684,7 @@ void Repository::garbage_collect()
 
     log.newline();
     std::system((std::string("git --git-dir=\"") + repo_name +
-                 "\" gc").c_str());
+                 "\" gc --quiet").c_str());
   }
 }
 
