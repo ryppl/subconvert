@@ -56,13 +56,12 @@ sleep 5
 rsync -aix --delete .git/ $WORKSPACE/boost-history.git/ | pv -le -s "$(du -d 0 .git/ | cut -f 1)" > /dev/null
 
 # Push tools and libs up to GitHub
-set +e
 for dir in libs tools ; do
     pushd "$dir"
     for module in * ; do
         pushd "$module"
         git remote add origin "git@github.com:boostorg/$module"
-        git push --mirror origin
+        git push --mirror -f origin
         popd
     done
     popd
