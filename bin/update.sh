@@ -37,7 +37,7 @@ export LD_LIBRARY_PATH="$SUBCONVERT/prefix/lib"
        -A "$DOC/authors.txt"                         \
        -B "$DOC/branches.txt"                        \
        -M "$DOC/modules.txt"                         \
-       --gc 1000                                      \
+       --gc 1000 --skip                              \
        convert /home/svnsync/dump/boost.svndump
 
 git symbolic-ref HEAD refs/heads/trunk
