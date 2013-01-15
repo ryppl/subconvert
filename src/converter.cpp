@@ -259,8 +259,9 @@ void ConvertRepository::update_object(Git::Repository *       repo,
 #endif
 
     if (submodule) {
-      std::cerr << "  ==> matched to submodule " << submodule->pathname
-                << " -> " << submodule_path << std::endl;
+        status.debug(
+            "  ==> matched to submodule " + submodule->pathname
+            + " -> " + submodule_path.string());
       process_change(submodule->repository, submodule_path, branch);
     }
   }
