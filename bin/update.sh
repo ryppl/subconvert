@@ -53,7 +53,7 @@ git push -f --tags origin
 sleep 5
 
 # rsync to persistent storage.  Give ETA updates every 2s
-rsync -aix --delete .git/ $WORKSPACE/boost-history.git/ | pv -le -s "$(du -d 0 boost-zero/ | cut -f 1)" > /dev/null
+rsync -aix --delete .git/ $WORKSPACE/boost-history.git/ | pv -le -s "$(du -d 0 .git/ | cut -f 1)" > /dev/null
 
 cd $WORKSPACE
 rm -rf "$RAMDISK/cpp"
